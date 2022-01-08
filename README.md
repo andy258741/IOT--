@@ -26,3 +26,10 @@
 #### 6.創建完成
 
 ----
+### Python 程式碼  
+#### 1.在開始編寫程式碼之前，請至terminal輸入以下指令(安裝linebot sdk)
+    sudo apt-get line-bot-sdk
+#### 2.在開始編寫程式碼之前，請至terminal輸入以下指令(安裝ssmtp和mailutils)
+    sudo apt-get install ssmtp mailutils  
+#### 接著請按照下列網址設定ssmtp和gmail https://ithelp.ithome.com.tw/articles/10196110
+<em>若按照網址中測試指令( echo "這是信件內容。" | ssmtp recipient@your.domain.com) 得到回應為ssmtp:(raspberrypi) 是正常的，因為ssmtp無法在buster底下使用，若要測試請使用以下網址</em>
