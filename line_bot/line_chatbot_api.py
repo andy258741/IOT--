@@ -27,5 +27,5 @@ from linebot.models import (
     QuickReplyButton
 )
 
-line_bot_api = LineBotApi('1wJ0qK6iQGewuEh7FupMjTfdAQHrjNAWvIvjotjHPJguTZXcgDA2Us/OVHWgqRbeWwhfoCDS9wUQdj03kgMFPVGV4Pm+foOC7v1l444nPKMB36mSr41e4tZZIuTU3FCnLYGxaY367BPiWckUBMRplgdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('f014f896dc007c0ba62e1c583403d522')
+line_bot_api = LineBotApi('your channel access token')
+handler = WebhookHandler('your channel secret')
