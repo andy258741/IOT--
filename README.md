@@ -75,12 +75,24 @@
 ##### 4.1 app.py
 ##### 可在最下方程式碼更改運行的port號，其餘部分不須更動
     if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=你想要的port號, debug=True)
+        app.run(host='127.0.0.1', port=你想要的port號, debug=True)
 ##### 4.2 line_bot_api.py  
-##### channel access token設定
+> ##### channel access token設定
     line_bot_api = LineBotApi('your channel secret token')
-##### channel secret設定
+> ##### channel secret設定
     handler = WebhookHandler('your channel secret')
-##### 4.3 line_bot_handle.py
-##### 4.4 
+##### 4.3 line_bot_handle.py  
+> ##### function_handle_something(event)：用來處裡收到的字串，以做出相對應的處理，像是呼叫函式或是回傳訊息
+> ##### setting(event)：回傳一個carouseltemplate讓使用者選擇設定的投餵時間和投餵份量
+> ##### job():根據設定讓減速馬達轉動，並呼叫pir()
+> ##### pir():感測寵物，若感測到則呼叫camera()拍照
+> ##### camera():拍照並儲存於桌面，之後呼叫mail.py裡面的send_mail()
+> ##### check(event):查看目前的設定(時間和量)
+> ##### startnow(event):根據目前所設定的量立即啟動餵食
+> ##### start(event):利用Timer讓餵食機在正確的時間啟動
+##### 4.4 mail.py
+> ##### send_mail():寄送寵物進食的照片，並告訴飼主成功餵食
+
+----
+## 實作
 
