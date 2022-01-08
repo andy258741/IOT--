@@ -9,5 +9,20 @@
 > #### 厚紙板(cardboard)
 ## 軟體
 ### LINE Developer
-1.點擊下列網址(line developer官網)https://developers.line.biz/zh-hant/
-2.點擊右上角的Log in，
+#### 1.點擊下列網址(line developer官網)https://developers.line.biz/zh-hant/  
+#### 2.點擊右上角的Log in，點擊使用line帳號登入  
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/line%E7%99%BB%E5%85%A5%E7%95%AB%E9%9D%A2.png' width="700px">
+
+#### 3.畫面移到下方點擊Provider旁邊的create  
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%89%B5%E5%BB%BAprovider.png' width="700px">
+
+#### 4.點擊剛建立的Provider接著點擊create a new channel
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%96%B0%E5%BB%BAchannel.png' width="700px">
+
+#### 5.點擊Messaging API，輸入channel的基本資料(下方為四個必填選項)
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%AD%E5%AE%9Achannel.png' width="700px">  
+<em>備註：name, description及上方未截圖的icon都在之後可做更換，category和subcategory不影響後續操作</em>
+
+#### 6.創建完成
+
+----
