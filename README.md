@@ -1,12 +1,30 @@
 # IOT--Pet-Feeding-Machine
 ## 寵物餵食機 
-這個作品利用rasbperry pi和簡單的電子零件，搭配上linebot，可以選擇時間與餵食的量，在手機上就能輕鬆地幫家中的寵物餵食
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%81%B4%E9%9D%A2.jpg' width="400px">
+
+#### 這個作品利用rasbperry pi和簡單的電子零件，搭配上linebot，可以選擇時間與餵食的量，在手機上就能輕鬆地幫家中的寵物餵食
 ## 硬體
 > #### 樹梅派3(Raspberry pi 3)  
 > #### 紅外線感測器(pir motion sensor)  
 > #### 相機模組(camera module)  
 > #### 減速馬達(GA12-N20)
 > #### 厚紙板(cardboard)
+### 電路圖
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/circuit.png' width="700px">
+
+### 作品圖片  
+#### 上方
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E4%B8%8A%E6%96%B9.jpg' width="400px">
+
+#### 正面
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%AD%A3%E9%9D%A2.jpg' width="400px">
+
+#### 內部箱子底部
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%85%A7%E7%AE%B1%E5%AD%90%E5%BA%95.jpg' width="400px">
+
+#### 檔板
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%AA%94%E6%9D%BF.jpg' width="400px">
+
 ## 軟體
 ### LINE Developers(可在主機上操作)
 #### 1.點擊下列網址(line developers官網)https://developers.line.biz/zh-hant/  
@@ -92,7 +110,51 @@
 > ##### start(event):利用Timer讓餵食機在正確的時間啟動
 ##### 4.4 mail.py
 > ##### send_mail():寄送寵物進食的照片，並告訴飼主成功餵食
+<em>備註：這四個.py檔需存放在同個目錄底下，範例是放在Desktop資料夾</em>
 
 ----
-## 實作
+## 實作(需在Raspberrypi上操作)  
+### Step 1：在terminal輸入下列指令，進入app.py的所在目錄(範例為Desktop)並啟動app.py
+    cd Desktop
+    sudo python3 app.py
+#### 成功後出現以下畫面：
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%95%9F%E5%8B%95app.py.png' width="700px">
 
+#### Step 2：在terminal輸入下列指令啟用ngrok，並複製https
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A4%87%E8%A3%BDhttps.png' width="700px">
+
+#### Step 3：到Line Delelopers開啟剛剛創建的channel，點擊Messaging API，找到Webhook settings併案下edit
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%AD%E5%AE%9Awebhook.png' width="700px">
+
+#### Step 4：將剛才複製的網址貼上並在後面加上<em>/callback</em>，點擊update  
+#### Step 5：開啟下方的Use Webhook並點擊vertify
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%BB%9E%E6%93%8Avertify.png' width="700px">
+
+#### 若成功就會出現以下畫面
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%88%90%E5%8A%9F.png' width="700px">
+
+#### Step 6：到Line Delelopers開啟channel，並點擊Messing API，用BOT basic ID或是QR code連接linebot
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%80%A3%E6%8E%A5linebot.png' width="700px">
+
+#### Step 7：恭喜!可以開始操作了!
+
+#### 實際運行影片
+----
+## 改進、改善  
+#### 1.可以將重物壓在底下將底盤加重，或是使用無痕貼緊貼牆邊，防止傾倒  
+#### 2.減速馬達的優點是動力較大，且速度較慢，然而不能控制旋轉圈數，因此只能慢慢測試出轉動一圈所需要的時間，再將數值填入sleep函數當中，使用步進馬達可能是更好的選擇  
+#### 3.定時工作使用threading.timer，不適合指定多次工作，使用apscheduler會是更好的選擇  
+#### 4.因為沒有適合的加工器具，所以選擇使用紙箱，如果有適合的工具，使用壓克力或是其他堅固防水材質會是更好的選擇
+
+----
+## 參考網站
+> timethreading:https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/693491/  
+> Picamera:https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/0  
+> 紅外線感測器:http://hophd.com/raspberry-pi-sensor-infrared/  
+> ngrok:https://noob.tw/ngrok/  
+> tgz解壓縮:http://note.drx.tw/2008/04/command.html  
+> 時間加減:https://www.twblogs.net/a/5c9e9e3bbd9eee73ef4b66dc  
+> smtp內容:https://forums.raspberrypi.com/viewtopic.php?t=263695  
+> smtp設定:https://ithelp.ithome.com.tw/articles/10196110  
+> 傳送照片:https://www.itread01.com/content/1548600499.html  
+> ssmtp測試:https://forums.raspberrypi.com/viewtopic.php?t=263695  
