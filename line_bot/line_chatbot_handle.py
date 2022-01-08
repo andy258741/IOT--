@@ -134,7 +134,7 @@ def job():
     if quantity == 1:
         for k in range(3):
             GPIO.output(8,True)
-            time.sleep(1.2111)
+            time.sleep(1.33)
             GPIO.output(8,False)
             time.sleep(1)
         pir()
@@ -142,7 +142,7 @@ def job():
     elif quantity == 2:
         for k in range(4):
             GPIO.output(8,True)
-            time.sleep(1.2111)
+            time.sleep(1.33)
             GPIO.output(8,False)
             time.sleep(1)
         pir()
@@ -150,7 +150,7 @@ def job():
     elif quantity == 3:
         for k in range(5):
             GPIO.output(8,True)
-            time.sleep(1.2111)
+            time.sleep(1.33)
             GPIO.output(8,False)
             time.sleep(1)
         pir()
