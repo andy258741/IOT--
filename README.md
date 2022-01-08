@@ -8,3 +8,6 @@
 > #### 減速馬達(GA12-N20)
 > #### 厚紙板(cardboard)
 ## 軟體
+### LINE Developer
+1.點擊下列網址(line developer官網)https://developers.line.biz/zh-hant/
+2.點擊右上角的Log in，
