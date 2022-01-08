@@ -52,7 +52,7 @@
 <img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%A0%BB%E9%81%93%E5%AF%86%E7%A2%BC.png' width="600px">
 
 #### 10.點擊Messaging API，按下最下方Channel access token內的issue，就會出現channel專屬的access token(紅色方框區域)，python程式碼需要使用
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%A0%BB%E9%81%93access.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%A0%BB%E9%81%93access.png' width="600px">
 
 ----
 ### Line official account  
@@ -61,7 +61,7 @@
 <img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E7%99%BB%E5%85%A5line%E5%AE%98%E6%96%B9%E5%B8%B3%E8%99%9F.png' width="600px">
 
 #### 3.在下方畫面點選剛才創立的channel
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%81%B8%E6%93%87channel.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%81%B8%E6%93%87channel.png' width="600px">
 
 #### 4.在左側點選聊天室相關的圖文選單，接著點擊右上角的建立
 <img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%BB%BA%E7%AB%8B%E5%9C%96%E6%96%87%E9%81%B8%E5%96%AE.png' width="600px">
