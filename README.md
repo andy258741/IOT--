@@ -10,7 +10,7 @@
 > #### 減速馬達(GA12-N20)
 > #### 厚紙板(cardboard)
 ### 電路圖
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/circuit.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/circuit.png' width="500px">
 
 ### 作品圖片  
 #### 上方
@@ -29,46 +29,63 @@
 ### LINE Developers(可在主機上操作)
 #### 1.點擊下列網址(line developers官網)https://developers.line.biz/zh-hant/  
 #### 2.點擊右上角的Log in，點擊使用line帳號登入  
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/line%E7%99%BB%E5%85%A5%E7%95%AB%E9%9D%A2.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/line%E7%99%BB%E5%85%A5%E7%95%AB%E9%9D%A2.png' width="600px">
 
 #### 3.畫面移到下方點擊Provider旁邊的create  
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%89%B5%E5%BB%BAprovider.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%89%B5%E5%BB%BAprovider.png' width="600px">
 
 #### 4.點擊剛建立的Provider接著點擊create a new channel
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%96%B0%E5%BB%BAchannel.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%96%B0%E5%BB%BAchannel.png' width="600px">
 
 #### 5.點擊Messaging API，輸入channel的基本資料(下方為四個必填選項)
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%AD%E5%AE%9Achannel.png' width="700px">  
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%AD%E5%AE%9Achannel.png' width="600px">  
 <em>備註：name, description及上方未截圖的icon都在之後可做更換，category和subcategory不影響後續操作</em>
 
 #### 6.勾選下方兩個閱讀選項，點擊下方create創建完成  
 #### 7.點選新創建的channel，點擊Messaging API，按下Auto-reply messages
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%8A%E6%81%AF%E8%A8%AD%E5%AE%9A.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%8A%E6%81%AF%E8%A8%AD%E5%AE%9A.png' width="600px">
 
 #### 8.將自動回應訊息關閉，並把webhook啟用，如下圖所示
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%8A%E6%81%AF%E8%A8%AD%E5%AE%9A2.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%8A%E6%81%AF%E8%A8%AD%E5%AE%9A2.png' width="600px">
 
 #### 9.回到line developers點擊Basic settings最下方會有channel專屬的secret(紅色方框區域)，python程式碼需要使用
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%A0%BB%E9%81%93%E5%AF%86%E7%A2%BC.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%A0%BB%E9%81%93%E5%AF%86%E7%A2%BC.png' width="600px">
 
 #### 10.點擊Messaging API，按下最下方Channel access token內的issue，就會出現channel專屬的access token(紅色方框區域)，python程式碼需要使用
 <img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%A0%BB%E9%81%93access.png' width="700px">
 
 ----
+### Line official account  
+#### 1.點擊下列網址(line official account官網)https://tw.linebiz.com/
+#### 2.點擊右上方的登入管理頁面，再點擊下圖的管理頁面進行登入(流程與line developers相同)
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E7%99%BB%E5%85%A5line%E5%AE%98%E6%96%B9%E5%B8%B3%E8%99%9F.png' width="600px">
+
+#### 3.在下方畫面點選剛才創立的channel
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%81%B8%E6%93%87channel.png' width="700px">
+
+#### 4.在左側點選聊天室相關的圖文選單，接著點擊右上角的建立
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%BB%BA%E7%AB%8B%E5%9C%96%E6%96%87%E9%81%B8%E5%96%AE.png' width="600px">
+
+#### 5.設定圖文選單，輸入標題及使用時間後，選擇想要的版型，並輸入相對應的關鍵字。範例為：A-setting B-feed C-check
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%9C%96%E6%96%87%E9%81%B8%E5%96%AE%E8%A8%AD%E5%AE%9A.png' width="600px">
+
+#### 6.點選最下方的儲存即建立完成
+
+----
 ### Ngrok(需在Raspberrypi上操作)
 #### 1.點擊下列網址(ngrok官網)https://ngrok.com/  
 #### 2.點擊右上角Log，可使用github或是google帳號登入
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/ngrok%E7%99%BB%E5%85%A5.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/ngrok%E7%99%BB%E5%85%A5.png' width="600px">
 
 #### 3.下載ngrok(請選擇Linux(ARM)版本)
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/nrgok%E4%B8%8B%E8%BC%89.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/nrgok%E4%B8%8B%E8%BC%89.png' width="600px">
 
 #### 4.解壓縮tgz檔
     tar zxvf FileName.tgz
 #### 5.在Downloads的目錄底下輸入以下指令(以port=5000開啟ngrok)
     ngrok http 5000
 #### 如果成功就會出現以下畫面
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/ngrok%E6%88%90%E5%8A%9F.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/ngrok%E6%88%90%E5%8A%9F.png' width="600px">
 <em>備註：白色遮擋部分為英數夾雜的字串</em>
 
 #### 6.完成ngrok設定
@@ -118,36 +135,36 @@
     cd Desktop
     sudo python3 app.py
 #### 成功後出現以下畫面：
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%95%9F%E5%8B%95app.py.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E5%95%9F%E5%8B%95app.py.png' width="600px">
 
 #### Step 2：在terminal輸入下列指令啟用ngrok，並複製https
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A4%87%E8%A3%BDhttps.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A4%87%E8%A3%BDhttps.png' width="600px">
 
 #### Step 3：到Line Delelopers開啟剛剛創建的channel，點擊Messaging API，找到Webhook settings併案下edit
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%AD%E5%AE%9Awebhook.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E8%A8%AD%E5%AE%9Awebhook.png' width="600px">
 
 #### Step 4：將剛才複製的網址貼上並在後面加上<em>/callback</em>，點擊update  
 #### Step 5：開啟下方的Use Webhook並點擊vertify
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%BB%9E%E6%93%8Avertify.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%BB%9E%E6%93%8Avertify.png' width="600px">
 
 #### 若成功就會出現以下畫面
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%88%90%E5%8A%9F.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E6%88%90%E5%8A%9F.png' width="600px">
 
 #### Step 6：到Line Delelopers開啟channel，並點擊Messing API，用BOT basic ID或是QR code連接linebot
-<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%80%A3%E6%8E%A5linebot.png' width="700px">
+<img src='https://github.com/andy258741/IOT--Pet-Feeding-Machine/blob/main/image/%E9%80%A3%E6%8E%A5linebot.png' width="600px">
 
 #### Step 7：恭喜!可以開始操作了!
 
 #### 實際運行影片
 ----
-## 改進、改善  
+### 改進、改善  
 #### 1.可以將重物壓在底下將底盤加重，或是使用無痕貼緊貼牆邊，防止傾倒  
 #### 2.減速馬達的優點是動力較大，且速度較慢，然而不能控制旋轉圈數，因此只能慢慢測試出轉動一圈所需要的時間，再將數值填入sleep函數當中，使用步進馬達可能是更好的選擇  
 #### 3.定時工作使用threading.timer，不適合指定多次工作，使用apscheduler會是更好的選擇  
 #### 4.因為沒有適合的加工器具，所以選擇使用紙箱，如果有適合的工具，使用壓克力或是其他堅固防水材質會是更好的選擇
 
 ----
-## 參考網站
+### 參考網站
 > timethreading:https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/693491/  
 > Picamera:https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/0  
 > 紅外線感測器:http://hophd.com/raspberry-pi-sensor-infrared/  
