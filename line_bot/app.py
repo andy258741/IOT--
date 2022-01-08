@@ -36,6 +36,7 @@ def callback():
     except InvalidSignatureError or KeyboardInterrupt:
         print("Invalid signature. Please check your channel access token/channel secret.")
         abort(400)
+    finally:
         GPIO.cleanup()
     return 'OK'
 
